@@ -106,11 +106,7 @@ temp/
 *.sqlite
 *.sqlite3
 
-# Webdev artifacts (checkpoint zips, migrations, etc.)
-.webdev/
 
-# Manus version file (auto-generated, not part of source)
-client/public/__manus__/version.json
 
 # Native/build artifacts and generated media
 android-wrapper/.gradle/
@@ -119,12 +115,19 @@ dist-desktop/
 *.zip
 plantao-zen-apresentacao*.mp4
 plantao-zen-apresentacao-preview.png
+plantao-zen-trilha-original.wav
+video_frames/
 video-reference.png
 
-# Configuração local e prévias
+# Push credentials
+android/app/google-services.json
+*service-account*.json
+*.p8
+
+# Local secrets and native signing
 .env.*
 !.env.example
-qa/
-.manus-logs/
-*.pem
-*.key
+*.jks
+*.keystore
+**/local.properties
+**/.gradle/
